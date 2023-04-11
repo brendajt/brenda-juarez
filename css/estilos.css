@@ -1,0 +1,244 @@
+
+*{
+    margin: 0; 
+    padding: 0;
+    font-family: 'Crimson Text', serif;}
+
+nav p{
+    color:#684ea6; /*color de mi texto*/
+   /* background-color: #E8EBF7; /* Color de la cajita de mi texto */
+    font-size: 20px; /* tamaño de letra de mi texto*/
+    text-align: left; /* orientación de mi texto*/
+    letter-spacing: 5px; /*Espacio entre letras*/
+    word-spacing: 10px; /* Espacio entre palabras*/
+    text-shadow: -5px +5px 4px black; /*Metemos sombra a nuestro texto*/
+    font-weight: bold; /* letras negritas e intensidad*/
+}
+
+
+
+header a {
+    text-decoration: none; /*Para quitar subrayado*/
+    color: white; 
+    border: solid 1px black;
+    background-color: #684ea6; 
+    padding:10px;
+    border-radius: 20px;
+}
+
+li{
+    margin: 30px;
+    list-style-type: none; /* Para quitar los puntitos que aparecen para representar las listas*/
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+nav {
+    display: flex;
+    justify-content: space-between; /*Alineación horizontal*/
+    align-items: center; /*Alineación Vertical */
+    height: 30%;
+}
+ul{
+    display: flex;
+}
+nav img{
+    width: 10%;
+}
+.caja{
+    display: flex;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    
+}
+.cajita{
+width: 50%;
+text-align: center;
+}
+.cajita img{
+    width: 100%;
+}
+span{
+    color: #684ea6 ;
+}
+
+h1 {
+    font-size: 4em;
+}
+p{
+    margin-bottom: 30px;
+}
+
+        /* Termina barra de navegación */ 
+
+        /*Establecer un tamaño al header*/
+
+header{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(  rgba(170, 62, 213, 0.936),white );
+
+}
+
+.acerca {
+    height: 150vh;
+    background: url(../img/fondo-ondulado-morado_1035-8665.avif);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+}
+
+h2{
+    text-align: center;
+    font-size: 3em;
+}
+.acerca1{
+    height: 130vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.acerca2 {
+    width: 50%;
+    height: 50vh;
+    background: linear-gradient(to right, rgba(170, 62, 213, 0.455), rgba(217, 164, 238, 0.449) ); /*Fondo de derecha a izquierda*/ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius:50px;
+    padding: 20px;
+    font-weight: bold;
+}
+
+/* Pseudoclases HOVER */ 
+/* Es cambiar el estilo predeterminado cuando pase algo*/
+
+a:hover{ /*Cuando pase el mouse por las "a" va a pasar algo*/
+    color: rgb(106, 0, 255);
+    font-size: 30px;
+    background-color: rgb(188, 171, 210);
+}
+
+/* Division paralax */
+.paralax{
+    width: 100%;
+    height: 50vh;
+    background: url(../img/pexels-felix-mittermeier-957040\ \(1\).jpg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-attachment: fixed; /* Efecto de estar pegada*/
+}
+
+.paralax p {
+    width: 60%;
+    background-color: rgba(37, 69, 69, 0.532);
+    padding: 30px;
+    text-align: center;
+    font-size: 3em;
+    color: white;
+    text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #0fa, 0 0 82px #0fa, 0 0 92px #0fa, 0 0 102px #0fa, 0 0 151px #0fa; /* da un brillo, tipo neón a mi texto*/ 
+}
+
+/*Comienza PORTAFOLIO*/
+.portafolio{
+    width: 100%;
+    height: 100vh;
+    background: url(../img/fondo-ondulado-morado_1035-8665\(1\).jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+}
+
+.portafolio1 {
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.portafolio2 {
+    width: 60%;
+    height: 70vh;
+    border: solid 3px rgb(44, 95, 235);
+    display: flex;
+   
+}
+
+.portafolio2 img {
+    width: 0;
+    flex-grow: 1; /*agarra el espacio que le corresponde*/
+    object-fit: cover; /*agarra el espacio sin rebazar*/
+    opacity: .8 ; 
+    transition: .5s ease; /*2 pasos, el primero a la img */
+
+}
+
+.portafolio2 img:hover {
+    cursor: crosshair; /*Cursor se pone en cruz*/
+    width: 40%;
+    opacity: 1;
+    filter: contrast(120%);
+}
+
+/* Empieza CONTACTO */
+
+.contacto {
+    width: 100%;
+    height: 80vh;
+    background: linear-gradient( white , rgba(170, 62, 213, 0.936) );
+}
+
+.contacto1 {
+    height: 70vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contacto2 {
+    width: 60%;
+    height: 60vh;
+    background-color:  rgba(37, 69, 69, 0.301) ;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.input {
+    border: solid 3px #684ea6;
+    border-radius: 10px;
+}
+
+.boton {
+    color: white; 
+    border: solid 1px black;
+    background-color: #684ea6; 
+    padding:10px;
+    border-radius: 10px;
+}
+
+.whats {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
+
+footer{
+    width: 100%;
+    height: 20vh;
+    background-color: rgba(170, 62, 213, 0.936);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer img {
+    margin-right: 50px;
+}
