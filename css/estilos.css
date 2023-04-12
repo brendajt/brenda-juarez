@@ -1,8 +1,10 @@
 
+@import url("https://fonts.googleapis.com");
 *{
     margin: 0; 
     padding: 0;
-    font-family: 'Crimson Text', serif;}
+    font-family: 'Quicksand', sans-serif;
+}
 
 nav p{
     color:#684ea6; /*color de mi texto*/
@@ -62,10 +64,14 @@ text-align: center;
 }
 span{
     color: #684ea6 ;
+    background: linear-gradient(360deg, #8E43AD, #A463BF, #ce2e9e, #F2C511, #DDE6E8, #ea678f, #da701a);
+    -webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
 }
 
 h1 {
     font-size: 4em;
+   
 }
 p{
     margin-bottom: 30px;
@@ -93,6 +99,10 @@ header{
 h2{
     text-align: center;
     font-size: 3em;
+    background: linear-gradient(360deg, #8E43AD, #A463BF, #ce2e9e, #F2C511, #DDE6E8, #ea678f, #da701a);
+    -webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+
 }
 .acerca1{
     height: 130vh;
@@ -240,5 +250,43 @@ footer{
 }
 
 footer img {
+    border-radius: 50px;
     margin-right: 50px;
+    transition: .5s, color .10s;
+    -webkit-transition: .5s, color .10s;
+    -moz-transition: .5s, color .10s;
 }
+footer img:hover{
+    box-shadow: 0 8px 8px 0 #000000,0 8px 8px 0 #000000;
+    transform: translate(0px,5px);
+    -webkit-transform: translate(0px,5px);
+    -moz-transform:translate(0px,5px);
+}
+
+.aviso{
+    position: relative;
+    display: inline-block; /*visible uno abajo del otro*/
+    
+}
+
+/* vamos a trabajar con el span*/
+.aviso1{
+    font-size: 0.8em;
+    display: none; /*quita los elementos */
+    width: 500px;
+    border: solid 1px black;
+    background: #0000003d;
+    color: #fff;
+    border-radius: 10px;
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    z-index: 1; /* la posición de las cosas encimadas, posición 1 significa que se pasa adelante */
+
+}
+
+.aviso:hover .aviso1 { /*cuando pases el mouse sobre aviso, a aviso 1 le haras lo siguiente*/
+    display: block;
+
+}
+              
